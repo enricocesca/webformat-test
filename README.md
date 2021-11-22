@@ -48,24 +48,24 @@ php vediProgettiCrossTeam.php
 
 ## Dati iniziali per Test:
 ```bash
-# Inserimento Amministratore:
+# Inserimento Amministratore: <codiceFiscale> <nome>
 php aggiungiAmministratore.php  "LWNMNP74L11D651M" "Michele"
-# Assunzione Manager:
+# Assunzione Manager: <codiceFiscale> <nome> <idAmministratore>
 php assumiManager.php "WHTRWH66M65F902W" "Luca" "1"
 php assumiManager.php "HKLQFL96B24H648Y" "Giuseppe" "1"
-# Creazione Team:
+# Creazione Team: <acronimo> <idManager>
 php aggiungiTeam.php "E-COMMERCE" "1"
 php aggiungiTeam.php "PWA" "2"
-# Assunzione Sviluppatori:
+# Assunzione Sviluppatori: <codiceFiscale> <nome> <professione> <idTeam> <idAmministratore>
 php assumiSviluppatore.php "SQQTGS80E68I830O" "Sergio" "Senior Backend Developer" "1" "1"
 php assumiSviluppatore.php "ZDLLCG81D21L511C" "Mario" "Junior DevOps Engineer" "1" "1"
 php assumiSviluppatore.php "YPFMHP48H05E751N" "Enrico" "Junior Backend Developer" "1" "1"
 php assumiSviluppatore.php "SFNZYZ36R43D862U" "Lorenzo" "Junior Backend Developer" "2" "1"
 php assumiSviluppatore.php "CRBGLR30S10C037P" "Giacomo" "Junior Frontend Developer" "2" "1"
-# Creazione Progetti:
+# Creazione Progetti: <nome> <idAmministratore> <idManager>
 php assegnaProgetto.php "Progetto Cross-Team" "1" "1"
 php assegnaProgetto.php "Progetto Web App" "1" "2"
-# Creazione Task:
+# Creazione Task: <descrizione> <scadenza> <idManager> <idProgetto> <idsSviluppatori>
 php creaTask.php "Task Scaduto" "15-11-2021" "1" "1" "2"
 php creaTask.php "Task di Gruppo" "25-11-2021" "1" "1" "1,2"
 php creaTask.php "Task Personale" "28-12-2021" "1" "1" "3"
