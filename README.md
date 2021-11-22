@@ -4,8 +4,7 @@ Test svolto per il percorso di selezione e reclutamento dell'azienda Webformat (
 
 Requisiti: PHP e Composer (vedi https://getcomposer.org/doc/00-intro.md).
 
-## Installazione (MacOS):
-
+## Installazione:
 ```bash
 git clone https://github.com/enricocesca/webformat-test.git
 cd webformat-test
@@ -22,7 +21,6 @@ vendor/bin/doctrine orm:schema-tool:create
 ```
 
 ## Comandi CLI:
-
 ```bash
 # Inserire l'Amministratore (CEO):
 php aggiungiAmministratore.php <codiceFiscale> <nome>
@@ -48,8 +46,7 @@ php vediTaskScaduti.php
 php vediProgettiCrossTeam.php
 ```
 
-## Dati iniziali per Test (vedi data-seeding.sh):
-
+## Dati iniziali per Test:
 ```bash
 # Inserimento Amministratore:
 php aggiungiAmministratore.php  "LWNMNP74L11D651M" "Michele"
